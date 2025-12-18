@@ -1,0 +1,29 @@
+#div1 {width: 1200px; height: 200px;  border: 1px solid; margin: auto;}
+#div1 div {
+    width: 216px; height: 200px; background-color: aqua; 
+    display: inline-block; background-size: cover; margin-right:30px; 
+    &:nth-last-of-type(1){margin-right: 0;}
+&:hover{
+    & > span {color: whitesmoke; background-color: greenyellow;}
+}
+}
+#div1 div:nth-last-of-type(1){background-image: url(다운로드1.jpg);}
+#div1 div:nth-last-of-type(2){background-image: url(다운로드1.jpg);}
+#div1 div:nth-last-of-type(3){background-image: url(다운로드1.jpg);}
+#div1 div:nth-last-of-type(4){background-image: url(다운로드1.jpg);}
+#div1 div:nth-last-of-type(5){background-image: url(다운로드1.jpg);}
+
+
+#div1 span {
+    opacity: 0.8;
+    transition: all 0.1;
+    margin: auto; 
+    display: block; 
+    width: 100px;
+    margin-top: 100px; 
+    font-size: 20px; 
+    text-align: center;
+    border: 5px solid gray ; 
+    border-radius: 10px; 
+    color: red;
+}
