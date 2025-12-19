@@ -1,0 +1,49 @@
+#model {
+    position: absolute; background-color: rgba(0, 0, 0, 0.1);
+    top: 0; left: 0; z-index: 1;}
+a {position: absolute; z-index: 10;}
+
+a:hover ~ #login {display: block;}
+
+
+/* 로그인 */
+
+#login{
+    display: none;
+    margin: 100px auto;
+    width: 360px; height: 230px;
+    box-shadow: 0 0 8px lightgray;
+    border-radius: 10px;
+}
+#login > .title{
+   /* background-color: antiquewhite; */
+    text-align: center; letter-spacing: 5px;
+    font-size: 25px; border-bottom: 3px dotted olive;
+    width: 220px; margin: auto; padding: 10px 0; color: rgb(6, 73, 51);}
+#login > form {
+  /*  background-color: aquamarine; */ width: 270px; margin: 0px;    
+}
+#login > form > input {
+    color: gray; 
+    font-size: 20px;
+     margin-top: 30px; 
+    border: none; 
+    outline: none;
+    border-bottom: 2px solid lightgray;
+    letter-spacing: 3px; width: 100%;
+    &:focus{border-bottom: 2px solid rgb(214, 35, 35);}
+}
+#login > form > button {
+    margin-top: 20px;
+    width: 100%; height: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: lightgray;
+    &:hover{
+        background-color: gray; 
+        box-shadow: 0 0 2px black;
+    }
+}
