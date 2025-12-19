@@ -1,0 +1,23 @@
+#div1 {
+    overflow: hidden;
+    width: 200px; height: 200px;
+    border: 5px solid rgb(0, 0, 0); border-radius: 150px;
+    & img{width: 200px; height: 200px; transition: 1s;}
+}
+#div1 img:hover{ 
+    transform: scale(2.5) rotate(360deg);
+    transition: 1s; 
+
+    
+}
+#div2 {width: 200px;  
+    text-align: center;
+    margin-left: 15px;
+    margin-top: -150px; 
+    font-size: 50px;
+    transition: 1.5s;
+}
+#div1:hover ~ #div2 { 
+    transform: translateY(150px);
+    transition: 1s;
+}
